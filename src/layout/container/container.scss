@@ -1,0 +1,29 @@
+@import "../variables.scss";
+@import "../../common/style/colors.scss";
+
+.container-layout {
+  flex: 1;
+  padding-top: $top-layout-height;
+
+  .layout-content {
+
+  }
+}
+
+#background {
+  $background-size: 1000px;
+  font-family: Perpetua;
+  font-size: $background-size;
+  position: absolute;
+  z-index: -1;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  color: fade-out($white,0.96);
+
+  .background-d {
+    font-size: 0.75*$background-size;
+  }
+}

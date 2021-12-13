@@ -1,0 +1,40 @@
+@import "../variables.scss";
+@import "../../common/style/colors.scss";
+
+.top-layout {
+  $title-size: 50px;
+
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+
+  font-family: 'Perpetua';
+  background-color: $white;
+  width: 100%;
+  height: $top-layout-height;
+  border-bottom-left-radius: 0.50*$top-layout-height;
+  padding-left: 0.5*$top-layout-height;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+
+  .title {
+    text-align: end;
+    font-size: $title-size;
+    color: $dark-blue;
+
+    .title-d {
+      color: $simple-grey;
+      font-size: 0.75*$title-size;
+    }
+
+    .title-end {
+      color: $simple-grey;
+      font-size: 0.60*$title-size;
+      font-style: italic;
+    }
+  }
+}
