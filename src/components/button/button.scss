@@ -1,0 +1,31 @@
+@import "../../common/style/colors.scss";
+
+.button-container {
+  flex: 1;
+  color: $white;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+
+  text-align: center;
+
+  border-left: solid 2px;
+  border-bottom: solid 2px;
+  padding: 10px;
+  border-bottom-left-radius: 20px;
+
+  &:hover {
+    color: $orange;
+  }
+
+  .button-subtitle {
+    font-size: 0.7em;
+  }
+}
+
+.button-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}

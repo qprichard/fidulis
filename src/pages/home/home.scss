@@ -1,0 +1,236 @@
+@import "../../common/style/colors";
+
+.home-container {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.right-menu {
+  position: absolute;
+  top: 20px;
+  right: 10%;
+}
+
+.preview-container {
+  cursor: default;
+  user-select: none;
+  position: relative;
+  height: 100%;
+  margin: 0 25%;
+  width: 50%;
+
+  div {
+    $default-size: 40px;
+    $big-size: 1.3*$default-size;
+    position: absolute;
+    font-family: 'RoundedBookRegular', Roboto, serif;
+    font-size: $default-size;
+    white-space: nowrap;
+
+    $left-border: -960px;
+    $right-border: 960px;
+    $top-border: 0;
+    $bottom-border: 100%;
+    $transition: all ease;
+
+    &.expertise {
+      color: $white;
+      left: 1*$default-size;
+      top: 40%;
+      opacity: 1;
+      transition: $transition random(150) + 250  + ms;
+
+      &.hidden {
+        opacity: 0;
+        left: $left-border;
+      }
+    }
+
+    &.ecoute {
+      color: $dark-blue;
+      font-size: $big-size;
+      top: calc(40% - 2.5*#{$default-size});
+      left: 4.5*$default-size;
+      transform: rotate(-90deg);
+      opacity: 1;
+      transition: $transition random(150) + 250  + ms;
+
+      &.hidden {
+        opacity: 0;
+        top: $top-border;
+      }
+    }
+
+    &.reactivite {
+      color: $orange;
+      top: calc(40% - 2.3*#{$default-size});
+      transform: rotate(-90deg);
+      left: 6*$default-size;
+      opacity: 1;
+      transition: $transition random(150) + ms;
+
+      &.hidden {
+        opacity: 0;
+        top: $top-border;
+      }
+    }
+
+    &.strategie {
+      color: $orange;
+      font-size: $big-size;
+      top: 20%;
+      left: 10*$default-size;
+      opacity: 1;
+      transition: $transition random(150) + 250  + ms;
+
+      &.hidden {
+        opacity: 0;
+        left: $right-border;
+      }
+    }
+
+    &.negociation {
+      color: $dark-blue;
+      top: 27%;
+      left: 11*$default-size;
+      opacity: 1;
+      transition: $transition random(150) + 250  + ms;
+
+      &.hidden {
+        opacity: 0;
+        left: $right-border;
+      }
+    }
+
+    &.confiance {
+      color: $white;
+      font-size: $big-size;
+      top: 32%;
+      left: 9.5*$default-size;
+      opacity: 1;
+      transition: $transition random(150) + 250  + ms;
+
+      &.hidden {
+        opacity: 0;
+        left: $right-border;
+      }
+    }
+
+    &.savoir-faire {
+      color: $white;
+      top: 30%;
+      transform: rotate(-90deg);
+      left: 15.5*$default-size;
+      opacity: 1;
+      transition: $transition random(150) + 250  + ms;
+
+      &.hidden {
+        opacity: 0;
+        top: $top-border;
+      }
+    }
+
+    &.teletravail {
+      color: $dark-blue;
+      top: 48%;
+      left: 5*$default-size;
+      opacity: 1;
+      transition: $transition random(150) + 250  + ms;
+
+      &.hidden {
+        opacity: 0;
+        left: $left-border;
+      }
+    }
+
+    &.contestation {
+      color: $white;
+      font-size: $big-size;
+      top: 55%;
+      left: 0;
+      opacity: 1;
+      transition: $transition random(150) + 250  + ms;
+
+      &.hidden {
+        opacity: 0;
+        left: $left-border;
+      }
+    }
+
+    &.licenciement {
+      color: $orange;
+      top: 62%;
+      left: 5*$default-size;
+      opacity: 1;
+      transition: $transition random(150) + 250  + ms;
+
+      &.hidden {
+        opacity: 0;
+        left: $left-border;
+      }
+    }
+
+    &.solutions {
+      color: $orange;
+      transform: rotate(-90deg);
+      top: 58%;
+      left: 10*$default-size;
+      opacity: 1;
+      transition: $transition random(150) + 250  + ms;
+
+      &.hidden {
+        opacity: 0;
+        top: $right-border;
+      }
+    }
+
+    &.prudhommes {
+      color: $white;
+      top: 60%;
+      left: 14*$default-size;
+      opacity: 1;
+      transition: $transition random(150) + 250  + ms;
+
+      &.hidden {
+        opacity: 0;
+        left: $right-border;
+      }
+    }
+
+    &.contentieux {
+      color: $orange;
+      font-size: $big-size;
+      top: 50%;
+      left: 14*$default-size;
+      opacity: 1;
+      transition: $transition random(150) + 250  + ms;
+
+      &.hidden {
+        opacity: 0;
+        left: $right-border;
+      }
+    }
+
+    &.accidents {
+      color: $dark-blue;
+      top: 43%;
+      left: 11*$default-size;
+      opacity: 1;
+      transition: $transition random(150) + 250  + ms;
+
+      &.hidden {
+        opacity: 0;
+        left: $right-border;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 980px) {
+  .preview-container {
+    width: 98%;
+    margin: 0 1%;
+  }
+}

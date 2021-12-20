@@ -1,5 +1,9 @@
 @import "./common/style/colors.scss";
+
 body {
+  font-family: 'RoundedBookRegular', Roboto, serif;
+  font-weight: 400;
+  font-size: 20px;
   padding: 0;
   margin: 0;
   background-color: $wallpaper-blue;

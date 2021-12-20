@@ -9,7 +9,7 @@
   left: 0;
   top: 0;
 
-  font-family: 'Perpetua';
+  font-family: 'Perpetua', Roboto, serif;
   background-color: $white;
   width: 100%;
   height: $top-layout-height;
@@ -22,6 +22,8 @@
   align-items: center;
 
   .title {
+    cursor: pointer;
+    user-select: none;
     text-align: end;
     font-size: $title-size;
     color: $dark-blue;
