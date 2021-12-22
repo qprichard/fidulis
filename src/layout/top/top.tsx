@@ -1,5 +1,6 @@
 import "./top.scss";
 import {useNavigate} from "react-router-dom";
+
 export const TopLayout = () => {
     const navigate = useNavigate();
     return (
