@@ -54,15 +54,9 @@ const Header = ({children}: any) => <div className="modal-header">{children}</di
 const Body = ({children}: any) => <div className="modal-body">{children}</div>
 
 const Modal = ({children}: any) => {
-    let subComponentList = Object.keys(Modal);
-
-    let subComponents = subComponentList.map(key => {
-        return Children.map(children, (child) => child.type.name === key ? child : null);
-    });
-
     return (
         <div className="modal" onClick={(e) => e.stopPropagation()}>
-            {subComponents.map((c) => c)}
+            {children}
         </div>
     );
 };
