@@ -9,7 +9,8 @@ import {LitigationPage} from "../../pages/litigation/litigation";
 
 export const ContainerLayout = () => (
     <div className="container-layout">
-        <div id="background">fi<span className="background-d">d</span>ulis</div>
+        {/*<div id="background">fi<span className="background-d">d</span>ulis</div>*/}
+        <img src={`${process.env.PUBLIC_URL}/img/background.png`} alt="oups" id="background"/>
         <Routes>
             <Route path="/home" element={<Home/>}/>
             <Route path="/cabinet" element={<CabinetPage/>}/>

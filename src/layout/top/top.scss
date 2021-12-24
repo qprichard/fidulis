@@ -5,7 +5,7 @@
   $title-size: 50px;
 
   position: fixed;
-  z-index: 10;
+  z-index: 1;
   left: 0;
   top: 0;
 
@@ -13,7 +13,7 @@
   background-color: $white;
   width: 100%;
   height: $top-layout-height;
-  border-bottom-left-radius: 0.50*$top-layout-height;
+  border-bottom-left-radius: 0.75*$top-layout-height;
   padding-left: 0.5*$top-layout-height;
 
   display: flex;
@@ -21,22 +21,21 @@
   justify-content: left;
   align-items: center;
 
-  .title {
+  .logo {
     cursor: pointer;
     user-select: none;
-    text-align: end;
-    font-size: $title-size;
-    color: $dark-blue;
-
-    .title-d {
-      color: $simple-grey;
-      font-size: 0.75*$title-size;
-    }
-
-    .title-end {
-      color: $simple-grey;
-      font-size: 0.60*$title-size;
-      font-style: italic;
-    }
+    height: 0.5*$top-layout-height;
+    margin: 10px;
   }
+}
+
+.top-layout-shadow {
+  z-index: -1;
+  position: absolute;
+  width: 50%;
+  height: 8.5%;
+  opacity: 0.5;
+  box-shadow: 5px 10px 30px 40px $black;
+  transform: rotate(-5deg);
+  background-color: $black;
 }

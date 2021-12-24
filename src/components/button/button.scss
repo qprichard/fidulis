@@ -1,32 +1,60 @@
 @import "../../common/style/colors.scss";
+@import "../../common/style/sizes.scss";
 
 .button-container {
+  position: relative;
   font-family: RoundedBookRegular, Roboto, serif;
   font-size: 0.9em;
-  flex: 1;
-  color: $white;
+  color: $orange;
   cursor: pointer;
   user-select: none;
 
-  text-align: center;
+  text-align: left;
+  padding-left: 10px;
 
-  border-left: solid 2px;
-  border-bottom: solid 2px;
-  padding: 10px;
-  border-bottom-left-radius: 40px;
+  $radius: 40px;
+
+  &::before {
+    z-index: -1;
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 45px;
+    left: 0;
+    height: 100%;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    border-bottom-left-radius: $radius;
+  }
+
+  &::after {
+    z-index: -1;
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: $radius + 5px;
+    height: $radius +5px;
+    border-bottom-left-radius: $radius;
+    box-shadow: -5px 5px 5px rgba(0,0,0, 0.3);
+  }
 
   &:hover {
-    color: $orange;
+    color: $white;
   }
 
   .button-subtitle {
-    font-size: 0.7em;
+    font-size: 0.7*$default;
   }
 }
 
 .button-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: stretch;
+  display: grid;
+  width: 75%;
+  height: 100%;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-auto-rows: 75px;
+  grid-gap: 20px;
 }

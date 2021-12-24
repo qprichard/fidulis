@@ -81,12 +81,10 @@ export const LitigationContent = () => {
             <ButtonList>
                 <Button
                     title="contentieux individuels"
-                    subtitle="(Conseil de prud'hommes, Tribunal administratif, Tribunal judiciaire Pôle social, Cour d'appel, CNITAAT, ...)"
                     onClick={openModal1}
                 />
                 <Button
                     title="contentieux collectifs"
-                    subtitle="(Conseil de prud'hommes, Tribunal judiciaire, Cour d'appel...)"
                     onClick={openModal2}
                 />
             </ButtonList>
