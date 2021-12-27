@@ -4,13 +4,13 @@
 .button-container {
   position: relative;
   font-family: RoundedBookRegular, Roboto, serif;
-  font-size: 0.9em;
+  font-size: $button;
   color: $orange;
   cursor: pointer;
   user-select: none;
 
   text-align: left;
-  padding-left: 10px;
+  padding-left: 20px;
 
   $radius: 40px;
 
@@ -57,4 +57,10 @@
   grid-template-columns: 2fr 2fr 2fr;
   grid-auto-rows: 75px;
   grid-gap: 20px;
+}
+
+@media (max-width: 970px) {
+  .button-container {
+    font-size: 0.8*$button;
+  }
 }

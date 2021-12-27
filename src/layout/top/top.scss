@@ -39,3 +39,9 @@
   transform: rotate(-5deg);
   background-color: $black;
 }
+
+@media (max-width: 970px) {
+  .top-layout-shadow {
+    transform: rotate(-7.5deg);
+  }
+}

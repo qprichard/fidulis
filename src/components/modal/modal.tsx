@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom";
 import "./modal.scss";
-import React, {Children, createContext, ReactElement, useContext, useState} from "react";
+import React, {createContext, ReactElement, useContext, useState} from "react";
 
 interface ModalContextProps {
     open: boolean,

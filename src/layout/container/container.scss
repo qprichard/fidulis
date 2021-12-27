@@ -15,3 +15,12 @@
   width: 75%;
   opacity: 0.1;
 }
+
+@media (max-width: 970px) {
+  #background {
+    width: 95%;
+    right: 20px;
+    //left: 20px;
+    bottom: 20px;
+  }
+}

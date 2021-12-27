@@ -26,6 +26,15 @@ const Modal1 = () => (
                 <li>
                     Contentieux de réclamation d'heures supplémentaires et remise en cause des forfaits
                 </li>
+                <li>
+                    Contentieux de requalification des CDD, contrats d'intérims
+                </li>
+                <li>
+                    Obligations de sécurité
+                </li>
+                <li>
+                    Droit disciplinaire
+                </li>
             </ul>
         </Modal.Body>
     </Modal>
@@ -45,6 +54,9 @@ const Modal2 = () => (
             <ul>
                 <li>
                     Application du statut collectif
+                </li>
+                <li>
+                    Contentieux Prud'hommes
                 </li>
                 <li>
                     Contentieux de la mise en place des institutions représentatives du personnel (élections professionnelles, désignation des représentants syndicaux, ...)

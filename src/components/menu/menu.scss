@@ -35,3 +35,10 @@
     font-size: 0.8em;
   }
 }
+
+@media (max-width: 970px) {
+  .menu-container {
+    padding: 8px 0;
+    font-size: 0.8*$menu-title;
+  }
+}

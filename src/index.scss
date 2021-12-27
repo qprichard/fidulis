@@ -18,3 +18,10 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+
+@media (max-width: 970px) {
+  body {
+    font-size: 0.9*$default;
+  }
+}
