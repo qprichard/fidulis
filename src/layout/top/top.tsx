@@ -1,9 +1,17 @@
 import "./top.scss";
 import {useNavigate} from "react-router-dom";
-import {Button, ButtonList} from "../../components/button/button";
+import MenuIcon from '@mui/icons-material/Menu';
+import {useCallback, useContext} from "react";
+import {BurgerMenuContext} from "../../components/burger-menu/burger-menu";
 
 export const TopLayout = () => {
     const navigate = useNavigate();
+
+    const burgerMnuCtx = useContext(BurgerMenuContext);
+    const onIconClick = useCallback(() => {
+        burgerMnuCtx.setOpen(!burgerMnuCtx.open)
+    }, [burgerMnuCtx]);
+
     return (
         <>
             <div className="top-layout">
@@ -15,11 +23,7 @@ export const TopLayout = () => {
                     />
                 </div>
                 <div className="right-content">
-                        <Button
-                            className="top-button"
-                            title='Contact et accès'
-                            onClick={() => navigate('/contact')}
-                        />
+                    <MenuIcon className="menu-icon" onClick={onIconClick}/>
                 </div>
             </div>
             <div className="top-layout-shadow"></div>

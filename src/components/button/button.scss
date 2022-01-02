@@ -59,8 +59,17 @@
   grid-gap: 20px;
 }
 
-@media (max-width: 970px) {
+@media screen and  (max-width: 1024px) {
   .button-container {
     font-size: 0.8*$button;
+  }
+}
+
+@media screen and (max-device-width: 960px) {
+  .button-container {
+    font-size: 1.2*$button;
+  }
+  .button-list {
+    width: 100%;
   }
 }

@@ -16,11 +16,17 @@
   opacity: 0.1;
 }
 
-@media (max-width: 970px) {
+@media screen and (max-width: 1024px) {
   #background {
     width: 95%;
     right: 20px;
     //left: 20px;
     bottom: 20px;
+  }
+}
+
+@media screen and (max-device-width: 960px){
+  .container-layout {
+    padding-top: 0;
   }
 }

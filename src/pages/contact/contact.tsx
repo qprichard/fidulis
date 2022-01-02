@@ -17,7 +17,7 @@ const ContactContent = () => (
         </p>
         <br/>
         <p className="page-subtitle">SE RENDRE AU CABINET:</p>
-        <p>
+        <div>
             <a href="https://goo.gl/maps/wLzaH7SFe6pCxYe17">2, place Gailleton - 69002 Lyon</a>
             <br/>
             <br/>
@@ -37,7 +37,7 @@ const ContactContent = () => (
 
             En voiture: <br/>
             <strong>Parking Gailleton (Garage Bellecour)</strong>, 5 place Gailleton
-        </p>
+        </div>
 
     </>
 )

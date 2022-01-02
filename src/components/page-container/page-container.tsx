@@ -1,7 +1,5 @@
 import "./page-container.scss";
 import "../../common/animations/fade-in-animation.scss";
-
-import {BaseMenu} from "../menu/menu";
 import {ReactElement, useCallback} from "react";
 
 interface PageContainerProps {
@@ -9,9 +7,10 @@ interface PageContainerProps {
     imgHref?: string;
     title: string
     content?: ReactElement;
+    buttons?: ReactElement;
 }
 
-export const PageContainer = ({content, imgSrc, title, imgHref}: PageContainerProps) => {
+export const PageContainer = ({content, imgSrc, title, imgHref, buttons}: PageContainerProps) => {
     const onImageClick = useCallback(() => {
         if (!imgHref) {
             return;
@@ -27,13 +26,11 @@ export const PageContainer = ({content, imgSrc, title, imgHref}: PageContainerPr
                 alt="img"
                 onClick={onImageClick}
             />
-            <div className='page-menu'>
-                <BaseMenu/>
-            </div>
             <div className='page-title'>
                 <div>{title.toUpperCase()}</div>
             </div>
             <div className='page-content'>{content}</div>
+            {buttons ? <div className='page-buttons'>{buttons}</div> : null}
         </div>
     )
 }

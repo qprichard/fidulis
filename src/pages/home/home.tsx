@@ -1,27 +1,25 @@
 import "./home.scss";
 import {useCallback, useEffect, useState} from "react";
-import {Menu} from "../../components/menu/menu";
+import {useNavigate} from "react-router-dom";
 
 export const Home = () => {
     const [preview, setPreview] = useState(false);
-    const [menu, setMenu] = useState(false);
+    const navigate = useNavigate();
+
 
     useEffect(() => {
         setTimeout(() => setPreview(true), 250);
-    }, []);
+    }, [navigate]);
 
     const activeMenu = useCallback(() => {
         setPreview(false);
-        setTimeout(() => setMenu(true), 500);
-    }, [setPreview, setMenu]);
+        setTimeout(() => navigate('/cabinet'), 500);
+    }, [setPreview, navigate]);
 
     return (
         <div className='home-container'>
             {
-                !menu ?
-                    <Preview preview={preview} activeMenu={activeMenu}/>
-                    :
-                    <Menu className='right-menu'></Menu>
+                <Preview preview={preview} activeMenu={activeMenu}/>
             }
         </div>
     );

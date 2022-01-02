@@ -36,9 +36,15 @@
   }
 }
 
-@media (max-width: 970px) {
+@media screen and (max-width: 1024px) {
   .menu-container {
     padding: 8px 0;
     font-size: 0.8*$menu-title;
+  }
+}
+
+@media screen and (max-device-width: 960px) {
+  .menu-container {
+    font-size: 1.5*$menu-title;
   }
 }

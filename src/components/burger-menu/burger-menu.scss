@@ -1,0 +1,74 @@
+@import "../../common/style/colors.scss";
+@import "../../layout/variables.scss";
+
+.burger-menu-overlay {
+  position: fixed;
+  right: 0;
+  height: 100%;
+  z-index: 1;
+  display: block;
+  width: 0;
+  background-color: transparent;
+  transition: background-color ease-in-out 150ms;
+
+  .burger-menu-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    background-color: $wallpaper-blue;
+    transition: width ease-in-out 150ms;
+
+    .burger-menu {
+      position: absolute;
+      top: calc(#{$top-layout-height} + 50px);
+      right: -1000px;
+      white-space: nowrap;
+      overflow: hidden;
+      transition: right ease-in-out 150ms;
+    }
+  }
+
+  &.open {
+    width: 100%;
+    background-color: #000000aa;
+    .burger-menu-container {
+      width: 25%;
+
+      .burger-menu {
+        right: 50px;
+      }
+    }
+  }
+
+    &.open {
+
+      .burger-menu {
+        display: block;
+        opacity: 1;
+      }
+    }
+    .burger-menu {
+    }
+}
+
+@media screen and (max-width: 1024px) {
+  .burger-menu-overlay {
+    &.open {
+      .burger-menu-container {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: 960px){
+  .burger-menu-overlay {
+    &.open {
+      .burger-menu-container {
+        width: 100%;
+      }
+    }
+  }
+}

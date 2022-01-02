@@ -1,5 +1,6 @@
 @import "../variables.scss";
 @import "../../common/style/colors.scss";
+@import "../../common/style/sizes.scss";
 
 .top-layout {
   $title-size: 50px;
@@ -50,6 +51,12 @@
         color: $simple-grey;
       }
     }
+
+    .menu-icon {
+      display: block;
+      font-size: 2*$default;
+      color: $dark-blue;
+    }
   }
 }
 
@@ -64,8 +71,18 @@
   background-color: $black;
 }
 
-@media (max-width: 970px) {
+@media screen and (max-width: 1024px) {
   .top-layout-shadow {
     transform: rotate(-7.5deg);
+  }
+}
+
+@media screen and (max-device-width: 960px){
+  .top-layout {
+    height: 1.5*$top-layout-height;
+  }
+
+  .top-layout-shadow {
+    display: none;
   }
 }

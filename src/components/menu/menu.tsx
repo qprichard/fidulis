@@ -1,6 +1,7 @@
 import "./menu.scss";
-import {ReactElement} from "react";
+import {ReactElement, useCallback, useContext} from "react";
 import {useLocation, useNavigate} from "react-router-dom";
+import {BurgerMenuContext} from "../burger-menu/burger-menu";
 
 interface MenuProps {
     className?: string;
@@ -9,21 +10,13 @@ interface MenuProps {
 
 export const Menu = ({className}: MenuProps) => {
     return (
-        <BaseMenu className={className}>
-            <MenuRow title='le cabinet' className='huge' path='/cabinet'/>
-        </BaseMenu>
-    )
-
-}
-
-export const BaseMenu = ({className, children}: MenuProps) => {
-    return (
         <div className={`menu-container ${className ? className : ''}`}>
-            {children}
+            <MenuRow title='le cabinet' className='huge' path='/cabinet'/>
             <MenuRow title='conseil' path='/conseil'/>
             <MenuRow title='contentieux' subtitle='Individuels et Collectifs' path='/contentieux'/>
             <MenuRow title='formation' path='/formation'/>
             <MenuRow title='audit' path='/audit'/>
+            <MenuRow title='contact et accès' path='/contact'/>
         </div>
     )
 }
@@ -38,10 +31,19 @@ interface MenuRowProps {
 const MenuRow = ({title, path, subtitle, className}: MenuRowProps) => {
     const {pathname} = useLocation();
     const navigate = useNavigate();
+    const {setOpen, open} = useContext(BurgerMenuContext);
+
+    const onRowClick = useCallback((path: string) => {
+        if (open) {
+            setOpen(false);
+        }
+        navigate(path)
+    }, [navigate, setOpen, open]);
+
     return (
         <div
             className={`menu-row ${pathname === path ? ' selected ' : ''} ${className ? className : ''}`}
-            onClick={() => navigate(path)}
+            onClick={() => onRowClick(path)}
         >
             <div className={`menu-title`}>{title.toUpperCase()}</div>
             {subtitle ? <div className={`subtitle`}>{subtitle}</div> : null}

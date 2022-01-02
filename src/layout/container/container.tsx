@@ -10,7 +10,6 @@ import {ContactPage} from "../../pages/contact/contact";
 
 export const ContainerLayout = () => (
     <div className="container-layout">
-        {/*<div id="background">fi<span className="background-d">d</span>ulis</div>*/}
         <img src={`${process.env.PUBLIC_URL}/img/background.png`} alt="oups" id="background"/>
         <Routes>
             <Route path="/home" element={<Home/>}/>
@@ -20,7 +19,7 @@ export const ContainerLayout = () => (
             <Route path="/audit" element={<AuditPage/>}/>
             <Route path="/contentieux" element={<LitigationPage/>}/>
             <Route path="/contact" element={<ContactPage/>}/>
-            <Route path="/" element={<Navigate replace to="/home" />} />
+            <Route path="/" element={<Navigate replace to="/home"/>}/>
         </Routes>
     </div>
 );

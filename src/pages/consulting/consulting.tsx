@@ -153,7 +153,8 @@ const Modal7 = () => (
         </Modal.Body>
     </Modal>
 );
-export const ConsultingContent = () => {
+
+const ConsultingButtons = () => {
     const {setModal, setOpen} = useContext(ModalContext);
 
     const openModal = useCallback((modal: ReactElement) => {
@@ -163,20 +164,6 @@ export const ConsultingContent = () => {
 
     return (
         <>
-            <p>Avant tout litige, pour éviter tout contentieux ou encore pour anticiper sur toutes difficultés
-                susceptibles
-                de se présenter, Fidulis Avocat accompagne ses clients au quotidien.</p>
-            <p>Dans le cadre de son activité en conseil, le cabinet Fidulis Avocat, par son expertise juridique et sa
-                réactivité, apporte à ses clients des solutions opérationnelles, pratiques et adaptées aux
-                problématiques
-                qu'elles rencontrent dans le domaine des relations individuelles et collectives de travail, ainsi que
-                dans
-                leur évolution.</p>
-            <p>Les stratégies proposées par le cabinet reposent sur l'écoute, l'échange et la compréhension pour
-                répondre au
-                mieux aux attentes de ses clients.</p>
-
-            <br/>
             <p className="page-subtitle">NOS DOMAINES D'INTERVENTION</p>
             <ButtonList>
                 <Button
@@ -225,10 +212,32 @@ export const ConsultingContent = () => {
     );
 }
 
+export const ConsultingContent = () => {
+    return (
+        <>
+            <p>Avant tout litige, pour éviter tout contentieux ou encore pour anticiper sur toutes difficultés
+                susceptibles
+                de se présenter, Fidulis Avocat accompagne ses clients au quotidien.</p>
+            <p>Dans le cadre de son activité en conseil, le cabinet Fidulis Avocat, par son expertise juridique et sa
+                réactivité, apporte à ses clients des solutions opérationnelles, pratiques et adaptées aux
+                problématiques
+                qu'elles rencontrent dans le domaine des relations individuelles et collectives de travail, ainsi que
+                dans
+                leur évolution.</p>
+            <p>Les stratégies proposées par le cabinet reposent sur l'écoute, l'échange et la compréhension pour
+                répondre au
+                mieux aux attentes de ses clients.</p>
+
+            <br/>
+        </>
+    );
+}
+
 export const ConsultingPage = () => (
     <PageContainer
         title="conseil  "
         imgSrc={`${process.env.PUBLIC_URL}/img/home.jpg`}
         content={<ConsultingContent/>}
+        buttons={<ConsultingButtons/>}
     />
 )
