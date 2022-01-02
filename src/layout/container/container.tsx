@@ -6,6 +6,7 @@ import {ConsultingPage} from "../../pages/consulting/consulting";
 import {FormationPage} from "../../pages/formation/formation";
 import {AuditPage} from "../../pages/audit/audit";
 import {LitigationPage} from "../../pages/litigation/litigation";
+import {ContactPage} from "../../pages/contact/contact";
 
 export const ContainerLayout = () => (
     <div className="container-layout">
@@ -18,6 +19,7 @@ export const ContainerLayout = () => (
             <Route path="/formation" element={<FormationPage/>}/>
             <Route path="/audit" element={<AuditPage/>}/>
             <Route path="/contentieux" element={<LitigationPage/>}/>
+            <Route path="/contact" element={<ContactPage/>}/>
             <Route path="/" element={<Navigate replace to="/home" />} />
         </Routes>
     </div>

@@ -8,24 +8,48 @@
   z-index: 1;
   left: 0;
   top: 0;
+  right: 0;
 
   font-family: 'Perpetua', Roboto, serif;
   background-color: $white;
   width: 100%;
   height: $top-layout-height;
   border-bottom-left-radius: 0.75*$top-layout-height;
-  padding-left: 0.5*$top-layout-height;
 
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: flex-start;
   align-items: center;
+  min-width: 0;
 
-  .logo {
-    cursor: pointer;
-    user-select: none;
-    height: 0.5*$top-layout-height;
-    margin: 10px;
+  .logo-container {
+    flex: 1 0 0;
+    margin-left: 0.5*$top-layout-height;
+    .logo {
+      cursor: pointer;
+      user-select: none;
+      height: 0.5*$top-layout-height;
+      margin: 10px;
+    }
+  }
+
+  .right-content {
+    margin-right: 0.5*$top-layout-height;
+
+    .top-button {
+      padding: 10px 0 10px 20px;
+      &::before {
+      border-bottom-left-radius: 20px;
+
+      }
+      &::after {
+        border-bottom-left-radius: 20px;
+      }
+
+      &:hover {
+        color: $simple-grey;
+      }
+    }
   }
 }
 
