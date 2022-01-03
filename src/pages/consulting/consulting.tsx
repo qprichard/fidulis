@@ -16,10 +16,6 @@ const Modal1 = () => (
                     CDD (temps plein, temps partiel, ...)
                 </li>
                 <li>
-                    Clauses particulières: clause de non concurrence, clause de mobilité, convention de forfait
-                    jours/heures sur l'année, ...
-                </li>
-                <li>
                     Contrat de chantier, ...
                 </li>
             </ul>
@@ -52,30 +48,13 @@ const Modal2 = () => (
     </Modal>
 );
 
-const Modal3 = () => (
-    <Modal>
-        <Modal.Header>ACCIDENTS DU TRAVAIL <br/> ET MALADIES <br/> PROFESSIONNELLES </Modal.Header>
-        <Modal.Body>
-            <ul>
-                <li>
-                    Accompagnement en cas de déclaration d'accident du travail ou de demande de reconnaissance de
-                    maladie professionnelle
-                </li>
-                <li>
-                    Rédaction de lettre de réserve auprès de la CPAM et de la Comission de Recours Amiable
-                </li>
-            </ul>
-        </Modal.Body>
-    </Modal>
-);
-
 const Modal4 = () => (
     <Modal>
         <Modal.Header>NÉGOCIATION <br/> ET STATUTS <br/> COLLECTIFS </Modal.Header>
         <Modal.Body>
             <ul>
                 <li>
-                    Construire et adapter l'ensemble des accords collectifs (notamment: durée du travail)
+                    Construire et adapter l’ensemble des accords collectifs (notamment: durée du travail)
                 </li>
                 <li>
                     Engagements unilatéraux à défaut ou de préférence aux accords collectifs
@@ -93,6 +72,26 @@ const Modal4 = () => (
         </Modal.Body>
     </Modal>
 );
+
+
+const Modal3 = () => (
+    <Modal>
+        <Modal.Header>ACCIDENTS DU TRAVAIL <br/> ET MALADIES <br/> PROFESSIONNELLES </Modal.Header>
+        <Modal.Body>
+            <ul>
+                <li>
+                    Accompagnement en cas de déclaration d'accident du travail ou de demande de reconnaissance de
+                    maladie professionnelle
+                </li>
+                <li>
+                    Rédaction de lettre de réserve auprès de la CPAM et de la Comission de Recours Amiable
+                </li>
+            </ul>
+        </Modal.Body>
+    </Modal>
+);
+
+
 
 const Modal5 = () => (
     <Modal>
@@ -134,7 +133,8 @@ const Modal6 = () => (
 
 const Modal7 = () => (
     <Modal>
-        <Modal.Header>INSTALLATION DES REPRÉSENTATNS <br/> DU PERSONNEL ET FONCTIONNEMENT <br/> DES INSTITUTIONS </Modal.Header>
+        <Modal.Header>INSTALLATION DES REPRÉSENTATNS <br/> DU PERSONNEL ET FONCTIONNEMENT <br/> DES INSTITUTIONS
+        </Modal.Header>
         <Modal.Body>
             <ul>
                 <li>
@@ -215,19 +215,20 @@ const ConsultingButtons = () => {
 export const ConsultingContent = () => {
     return (
         <>
-            <p>Avant tout litige, pour éviter tout contentieux ou encore pour anticiper sur toutes difficultés
-                susceptibles
-                de se présenter, Fidulis Avocat accompagne ses clients au quotidien.</p>
-            <p>Dans le cadre de son activité en conseil, le cabinet Fidulis Avocat, par son expertise juridique et sa
+            <p>
+                Avant tout litige, ou pour éviter tout contentieux, ou encore pour anticiper sur toutes difficultés
+                susceptibles de se présenter, Fidulis Avocat accompagne ses clients au quotidien.
+            </p>
+            <p>
+                Dans le cadre de son activité en conseil, le cabinet Fidulis Avocat, par son expertise juridique et sa
                 réactivité, apporte à ses clients des solutions opérationnelles, pratiques et adaptées aux
-                problématiques
-                qu'elles rencontrent dans le domaine des relations individuelles et collectives de travail, ainsi que
-                dans
-                leur évolution.</p>
-            <p>Les stratégies proposées par le cabinet reposent sur l'écoute, l'échange et la compréhension pour
-                répondre au
-                mieux aux attentes de ses clients.</p>
-
+                problématiques qu’elles rencontrent dans le domaine des relations individuelles et collectives de
+                travail, ainsi que dans leur évolution.
+            </p>
+            <p>
+                Les stratégies proposées par le cabinet reposent sur l’écoute, l’échange et la compréhension pour
+                répondre au mieux aux attentes de ses clients.
+            </p>
             <br/>
         </>
     );

@@ -17,17 +17,17 @@ const Modal1 = () => (
         <Modal.Body>
             <ul>
                 <li>
-                    Contestation de licenciement, de faute grave et de licenciement abusif - prise d'acte ou
-                    résiliatioin judiciaire du contrat de travail
+                    Contestation de licenciement, de faute grave et de licenciement abusif – prise d’acte ou résiliation
+                    judiciaire du contrat de travail
                 </li>
                 <li>
-                    Contentieux du harcèlement moral et/ou sexuel ou de la discrimination salariale/syndicale
+                    Contentieux du harcèlement moral et/ou sexuel ou de la discrimination salariale / syndicale
                 </li>
                 <li>
-                    Contentieux de réclamation d'heures supplémentaires et remise en cause des forfaits
+                    Contentieux de réclamation d’heures supplémentaires et remise en cause des forfaits
                 </li>
                 <li>
-                    Contentieux de requalification des CDD, contrats d'intérims
+                    Contentieux de requalification des C.D.D, contrats d’intérim
                 </li>
                 <li>
                     Obligations de sécurité
@@ -59,16 +59,42 @@ const Modal2 = () => (
                     Contentieux Prud'hommes
                 </li>
                 <li>
-                    Contentieux de la mise en place des institutions représentatives du personnel (élections professionnelles, désignation des représentants syndicaux, ...)
+                    Contentieux administratifs relatifs aux salariés protégés,
                 </li>
                 <li>
-                    Contentieux du fonctionnement des institutions représentatives du personnel (délit d'entrave, ...)
+                    Contentieux devant la CNITAAT (Cour Nationale de l’Incapacité et de la Tarification de l’assurance
+                    des Accidents du Travail)
+                </li>
+                <li>
+                    Contentieux en faute inexcusable devant le tribunal judiciaire Pôle social
+                </li>
+                <li>
+                    Recours gracieux, devant la commission de recours amiable (CRA), contentieux, devant le Tribunal
+                    judiciaire pôle social, contre les décisions de prise en charge au titre de la législation des
+                    risques professionnels (maladie professionnelle, accident du travail)
                 </li>
             </ul>
         </Modal.Body>
     </Modal>
 );
 export const LitigationContent = () => {
+    return (
+        <>
+            <p>
+                En l’absence de rapprochement amiable entre les parties et quand le litige est inévitable, le cabinet
+                Fidulis Avocat assure la représentation d’une entreprise ou d’une association sur toute le territoire
+                français tant en 1re instance qu’en appel devant les Chambres Sociales devant toutes les juridictions
+                (conseil de prud’hommes : bureau de Conciliation et d’orientation, bureau de Jugement, départition…,
+                tribunal judiciaire Pôle social , tribunal administratif, cour d’appel, CNITAAT….) pour les litiges
+                résultant des relations entre l’employeur et le salarié.
+            </p>
+            <br/>
+
+        </>
+    );
+};
+
+const LitigationButtons = () => {
     const {setOpen, setModal} = useContext(ModalContext);
 
     const openModal1 = useCallback(() => {
@@ -80,15 +106,9 @@ export const LitigationContent = () => {
         setModal(<Modal2/>);
         setOpen(true);
     }, [setOpen, setModal]);
+
     return (
         <>
-            <p>En l'absence de rapprochement amiable entre les parties et quand le litige est inévitable, le cabinet
-                Fidulis Avocats assure la représentation d'une entreprise ou d'une association sur tout le territoire
-                français tant en première instance qu'en appel devant les Chambres Sociales et devant toutes les
-                juridictions (conseil de prud'hommes: bureau de conciliation et d'orientation, bureau de jugement,
-                départition tribunal judiciaire Pôle social, tribunal administratif, cour d'appel, CNITAAT, ...) pour
-                les litiges résultant des relations entre l'employeur et le salarié.</p>
-            <br/>
             <p className="page-subtitle">NOS DOMAINES D'INTERVENTION</p>
             <ButtonList>
                 <Button
@@ -102,12 +122,13 @@ export const LitigationContent = () => {
             </ButtonList>
         </>
     );
-};
+}
 
 export const LitigationPage = () => (
     <PageContainer
         imgSrc={`${process.env.PUBLIC_URL}/img/building.jpg`}
         title='contentieux'
         content={<LitigationContent/>}
+        buttons={<LitigationButtons/>}
     />
 );
