@@ -15,7 +15,6 @@ const ContactContent = () => (
             <a href="mailto:emartinet@fidulis.fr">emartinet@fidulis.fr</a>
             <br/>
         </p>
-        <br/>
         <p className="page-subtitle">SE RENDRE AU CABINET:</p>
         <div>
             <a href="https://goo.gl/maps/wLzaH7SFe6pCxYe17">2, place Gailleton - 69002 Lyon</a>
@@ -28,13 +27,10 @@ const ContactContent = () => (
                 <li>Tramway: station <strong>Gare de Perrache</strong>, ligne K110, K240, T2</li>
                 <li>Train: <strong>Gare de Perrache</strong></li>
             </ul>
-            <br/>
-            <br/>
 
             Vélo v': station <strong>Place Gailleton</strong>
             <br/>
             <br/>
-
             En voiture: <br/>
             <strong>Parking Gailleton (Garage Bellecour)</strong>, 5 place Gailleton
         </div>

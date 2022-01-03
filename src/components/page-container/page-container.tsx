@@ -5,12 +5,13 @@ import {ReactElement, useCallback} from "react";
 interface PageContainerProps {
     imgSrc: string;
     imgHref?: string;
+    imgClassName?: string;
     title: string
     content?: ReactElement;
     buttons?: ReactElement;
 }
 
-export const PageContainer = ({content, imgSrc, title, imgHref, buttons}: PageContainerProps) => {
+export const PageContainer = ({content, imgSrc, imgHref, imgClassName, title, buttons}: PageContainerProps) => {
     const onImageClick = useCallback(() => {
         if (!imgHref) {
             return;
@@ -22,7 +23,7 @@ export const PageContainer = ({content, imgSrc, title, imgHref, buttons}: PageCo
         <div className="page-container fade-in-animation">
             <img
                 src={imgSrc}
-                className='page-img'
+                className={`page-img ${imgClassName ? imgClassName : ''}`}
                 alt="img"
                 onClick={onImageClick}
             />

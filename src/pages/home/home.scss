@@ -337,7 +337,7 @@ $bottom-border: 100%;
         &.hidden {
           opacity: 0;
           left: 5*$default-size;
-          top: 18%;
+          top: $top-border;
         }
       }
 
@@ -353,7 +353,7 @@ $bottom-border: 100%;
         &.hidden {
           opacity: 0;
           top: 30%;
-          left: 7*$default-size;
+          left: $right-border;
         }
       }
 
@@ -367,8 +367,8 @@ $bottom-border: 100%;
 
         &.hidden {
           opacity: 0;
-          op: 35%;
-          left: 7*$default-size;
+          top: 35%;
+          left: $right-border;
         }
       }
 
@@ -383,7 +383,7 @@ $bottom-border: 100%;
 
         &.hidden {
           opacity: 0;
-          top: 48%;
+          top: $bottom-border;
           left: 8*$default-size;
         }
       }
@@ -398,7 +398,7 @@ $bottom-border: 100%;
 
         &.hidden {
           opacity: 0;
-          top: 55%;
+          top: $bottom-border;
           left: 6.5*$default-size;
         }
       }
@@ -414,7 +414,7 @@ $bottom-border: 100%;
 
         &.hidden {
           opacity: 0;
-          top: 50%;
+          top: $bottom-border;
           left: 5*$default-size;
         }
       }
@@ -430,7 +430,7 @@ $bottom-border: 100%;
         &.hidden {
           opacity: 0;
           top: 79%;
-          left: 6.8*$default-size;
+          left: $right-border;
         }
       }
 
@@ -444,7 +444,7 @@ $bottom-border: 100%;
 
         &.hidden {
           opacity: 0;
-          top: 35%;
+          top: $top-border;
           left: 3*$default-size;
         }
       }
@@ -460,7 +460,7 @@ $bottom-border: 100%;
 
         &.hidden {
           opacity: 0;
-          top: 25%;
+          top: $top-border;
           left: 0;
         }
       }
@@ -475,7 +475,7 @@ $bottom-border: 100%;
 
         &.hidden {
           opacity: 0;
-          top: 35%;
+          top: $top-border;
           left: 0;
         }
       }
@@ -491,7 +491,7 @@ $bottom-border: 100%;
         &.hidden {
           opacity: 0;
           top: 50%;
-          left: 2*$default-size;
+          left: $left-border;
         }
       }
 
@@ -505,7 +505,7 @@ $bottom-border: 100%;
 
         &.hidden {
           opacity: 0;
-          top: 65%;
+          top: $bottom-border;
           left: 0;
         }
       }
@@ -521,7 +521,7 @@ $bottom-border: 100%;
 
         &.hidden {
           opacity: 0;
-          top: 75%;
+          top: $bottom-border;
           left: 1*$default-size;
         }
       }
@@ -536,7 +536,7 @@ $bottom-border: 100%;
 
         &.hidden {
           opacity: 0;
-          top: 73%;
+          top: $bottom-border;
           left: $default-size;
         }
       }
