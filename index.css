@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'RoundedBookRegular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('RoundedBookRegular'), url(fonts/RoundedBookRegular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Perpetua';
+    src: local('Perpetua'), url(fonts/Perpetua.ttf) format('truetype');
+}
