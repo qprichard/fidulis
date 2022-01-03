@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/fidulis/static/css/main.e5732c25.chunk.css",
+    "main.css": "/fidulis/static/css/main.68269f53.chunk.css",
     "main.js": "/fidulis/static/js/main.0441993b.chunk.js",
     "main.js.map": "/fidulis/static/js/main.0441993b.chunk.js.map",
     "runtime-main.js": "/fidulis/static/js/runtime-main.107dc76e.js",
@@ -10,13 +10,13 @@
     "static/js/3.56e4155b.chunk.js": "/fidulis/static/js/3.56e4155b.chunk.js",
     "static/js/3.56e4155b.chunk.js.map": "/fidulis/static/js/3.56e4155b.chunk.js.map",
     "index.html": "/fidulis/index.html",
-    "static/css/main.e5732c25.chunk.css.map": "/fidulis/static/css/main.e5732c25.chunk.css.map",
+    "static/css/main.68269f53.chunk.css.map": "/fidulis/static/css/main.68269f53.chunk.css.map",
     "static/js/2.2e6d01ff.chunk.js.LICENSE.txt": "/fidulis/static/js/2.2e6d01ff.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.107dc76e.js",
     "static/js/2.2e6d01ff.chunk.js",
-    "static/css/main.e5732c25.chunk.css",
+    "static/css/main.68269f53.chunk.css",
     "static/js/main.0441993b.chunk.js"
   ]
 }
