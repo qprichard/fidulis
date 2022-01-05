@@ -6,11 +6,10 @@ interface ButtonProps {
     subtitle?: string;
     onClick: () => void;
     className?: string;
-    style?: CSSProperties
 }
 
-export const Button = ({title, subtitle, onClick, className, style}: ButtonProps) => (
-    <div className={`button-container ${className ? className : ''}`} onClick={() => onClick()} style={style ? style : undefined}>
+export const Button = ({title, subtitle, onClick, className}: ButtonProps) => (
+    <div className={`button-container ${className ? className : ''}`} onClick={() => onClick()}>
         <div className="button-title">{title.toUpperCase()}</div>
         {subtitle ? <div className="button-subtitle">{subtitle}</div> : null}
     </div>

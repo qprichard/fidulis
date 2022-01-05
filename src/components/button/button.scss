@@ -10,8 +10,12 @@
   cursor: pointer;
   user-select: none;
 
+  margin-right: 20px;
+  margin-bottom: 20px;
   text-align: left;
+  min-height: 40px;
   padding-left: 20px;
+  padding-bottom: 20px;
 
   $radius: 40px;
 
@@ -52,12 +56,17 @@
 }
 
 .button-list {
-  display: grid;
+  display: flex;
   width: 75%;
-  height: 100%;
-  grid-template-columns: 2fr 2fr 2fr;
-  grid-auto-rows: 75px;
-  grid-gap: 20px;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  //display: grid;
+  //width: 75%;
+  //height: 100%;
+  //grid-template-columns: 2fr 2fr 2fr;
+  //grid-auto-rows: 75px;
+  //grid-gap: 20px;
 }
 
 @media screen and  (max-width: 1024px) {
