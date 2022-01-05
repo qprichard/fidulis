@@ -2,16 +2,16 @@
 @import "../../common/style/sizes.scss";
 
 .button-container {
+  flex: 1 auto 0;
   position: relative;
   font-weight: bold;
   font-family: RoundedBookRegular, Roboto, serif;
   font-size: $button;
   color: $orange;
+
   cursor: pointer;
   user-select: none;
 
-  margin-right: 20px;
-  margin-bottom: 20px;
   text-align: left;
   min-height: 40px;
   padding-left: 20px;
@@ -56,22 +56,18 @@
 }
 
 .button-list {
+  //background-color: green;
   display: flex;
-  width: 75%;
   flex-direction: row;
   align-items: stretch;
-  justify-content: flex-start;
-  //display: grid;
-  //width: 75%;
-  //height: 100%;
-  //grid-template-columns: 2fr 2fr 2fr;
-  //grid-auto-rows: 75px;
-  //grid-gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 @media screen and  (max-width: 1024px) {
   .button-container {
-    font-size: 0.8*$button;
+    font-size: 0.7*$button;
   }
 }
 

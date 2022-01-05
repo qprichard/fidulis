@@ -167,42 +167,39 @@ const ConsultingButtons = () => {
             <p className="page-subtitle">NOS DOMAINES D'INTERVENTION</p>
             <ButtonList>
                 <Button
-                    style={{gridColumn: "1", gridRow: "1"}}
                     title="redaction des contrats de travail"
                     onClick={() => openModal(<Modal1/>)}
                 />
                 <Button
-                    style={{gridColumn: "2", gridRow: "1"}}
                     title="rupture de contrat de travail"
                     onClick={() => openModal(<Modal2/>)}
 
                 />
                 <Button
-                    style={{gridColumn: "3", gridRow: "1"}}
                     title="accidents du travail et maladies professionnelles"
                     onClick={() => openModal(<Modal3/>)}
 
                 />
+            </ButtonList>
+            <ButtonList>
                 <Button
-                    style={{gridColumn: "1", gridRow: "2"}}
                     title="négociation et statuts collectifs"
                     onClick={() => openModal(<Modal4/>)}
 
                 />
                 <Button
-                    style={{gridColumn: "2", gridRow: "2"}}
                     title="épargne salariale et actionnariat salarié"
                     onClick={() => openModal(<Modal5/>)}
 
                 />
                 <Button
-                    style={{gridColumn: "3", gridRow: "2"}}
                     title="relations avec l'ursaaf"
                     onClick={() => openModal(<Modal6/>)}
 
                 />
+            </ButtonList>
+            <ButtonList>
                 <Button
-                    style={{gridColumn: "1/4", gridRow: "3"}}
                     title="installation des représentants du personnel et fonctionnement des institutions"
                     onClick={() => openModal(<Modal7/>)}
 

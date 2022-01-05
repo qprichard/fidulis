@@ -1,11 +1,10 @@
 import "./menu.scss";
-import {ReactElement, useCallback, useContext} from "react";
+import {useCallback, useContext} from "react";
 import {useLocation, useNavigate} from "react-router-dom";
 import {BurgerMenuContext} from "../burger-menu/burger-menu";
 
 interface MenuProps {
     className?: string;
-    children?: ReactElement
 }
 
 export const Menu = ({className}: MenuProps) => {
@@ -20,6 +19,15 @@ export const Menu = ({className}: MenuProps) => {
         </div>
     )
 }
+
+export const MiniMenu = ({className}: MenuProps) => (
+    <div className={`menu-container ${className ? className : ''}`}>
+        <MenuRow title='conseil' path='/conseil'/>
+        <MenuRow title='contentieux' subtitle='Individuels et Collectifs' path='/contentieux'/>
+        <MenuRow title='formation' path='/formation'/>
+        <MenuRow title='audit' path='/audit'/>
+    </div>
+);
 
 interface MenuRowProps {
     title: string;
