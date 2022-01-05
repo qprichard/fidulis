@@ -6,7 +6,7 @@
   $title-size: 50px;
 
   position: fixed;
-  z-index: 1;
+  z-index: 101;
   left: 0;
   top: 0;
   right: 0;
@@ -61,7 +61,7 @@
 }
 
 .top-layout-shadow {
-  z-index: -1;
+  z-index: 100;
   position: absolute;
   width: 50%;
   height: 8.5%;
