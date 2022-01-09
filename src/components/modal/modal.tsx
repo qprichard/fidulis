@@ -51,7 +51,11 @@ const ModalProvider = ({children}: any) => {
 
 const Header = ({children}: any) => <div className="modal-header">{children}</div>;
 
-const Body = ({children}: any) => <div className="modal-body">{children}</div>
+const Body = ({children}: any) => <div className="modal-content">
+    <div className="modal-body">
+        {children}
+    </div>
+</div>
 
 const Modal = ({children}: any) => {
     return (

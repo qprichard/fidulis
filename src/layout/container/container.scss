@@ -9,7 +9,6 @@
 #background {
   position: absolute;
   z-index: -1;
-  overflow: hidden;
   bottom: 40px;
   right: 40px;
   width: 75%;
@@ -25,7 +24,7 @@
   }
 }
 
-@media screen and (max-device-width: 960px){
+@media screen and (max-device-width: 960px) {
   .container-layout {
     padding-top: 0;
   }

@@ -1,5 +1,26 @@
 @import "../../common/style/colors.scss";
+
 div a, p a {
-  //text-decoration: none;
+  text-decoration: none;
   color: $white;
+}
+
+@media screen and (max-device-width: 960px) {
+  .img-contain {
+    .page-img {
+      grid-row: 1 / 8;
+    }
+
+    .page-title {
+      grid-row: 8 / 12;
+    }
+
+    .page-content {
+      grid-row: 8 / 12;
+
+      &.full {
+        grid-row: 8 / 12;
+      }
+    }
+  }
 }

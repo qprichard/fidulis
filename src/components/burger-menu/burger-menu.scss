@@ -25,7 +25,6 @@
       top: calc(#{$top-layout-height} + 50px);
       right: -1000px;
       white-space: nowrap;
-      overflow: hidden;
       transition: right ease-in-out 150ms;
     }
   }

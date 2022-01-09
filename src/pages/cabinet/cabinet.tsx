@@ -13,13 +13,14 @@ const CabinetContent = () => (
         </p>
         <p>
             Fidulis Avocat a pour ambition de créer un climat de confiance propice à une collaboration durable et
-            constructrice avec ses clients.
+            constructive avec ses clients.
         </p>
         <p>
             Estelle Martinet a prêté serment en 2002 après avoir suivi sa formation en droit du travail (relations
-            individuelles et collectives) à l’Université Paris X (Magistère de droit social et DEA de droit social,
-            dirigés par Antoine Lyon-Caen). Elle intervient pendant 15 ans au sein de cabinets reconnus en matière de
-            droit du travail avant de créer sa propre structure en 2019.
+            individuelles et collectives) à l’Université Paris X (Magistère de droit social et DEA de droit social).
+            <br/>
+            Elle intervient pendant 15 ans au sein de cabinets reconnus en matière de
+            droit du travail avant de créer sa propre structure en 2017.
         </p>
     </>
 );

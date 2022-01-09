@@ -4,7 +4,7 @@
 body {
   font-family: 'Perpetua', Roboto, serif;
   font-weight: normal;
-  font-size: $default;
+  font-size: 1rem;
   padding: 0;
   margin: 0;
   background-color: $wallpaper-blue;
@@ -17,11 +17,4 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-
-@media (max-width: 970px) {
-  body {
-    font-size: 0.9*$default;
-  }
 }

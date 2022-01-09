@@ -8,10 +8,9 @@ export const TopLayout = () => {
     const navigate = useNavigate();
 
     const burgerMnuCtx = useContext(BurgerMenuContext);
-    const onIconClick = useCallback(() => {
+    const onBurgerClick = useCallback(() => {
         burgerMnuCtx.setOpen(!burgerMnuCtx.open)
     }, [burgerMnuCtx]);
-
     return (
         <>
             <div className="top-layout">
@@ -23,7 +22,9 @@ export const TopLayout = () => {
                     />
                 </div>
                 <div className="right-content">
-                    <MenuIcon className="menu-icon" onClick={onIconClick}/>
+                    <img onClick={() => navigate("/contact")} className="icon-button" src={`${process.env.PUBLIC_URL}/img/contact_icon.jpg`} alt='contact'/>
+                    <img className="icon-button" src={`${process.env.PUBLIC_URL}/img/news_icon.jpg`} alt='news'/>
+                    <MenuIcon className="menu-icon" onClick={onBurgerClick}/>
                 </div>
             </div>
             <div className="top-layout-shadow"></div>

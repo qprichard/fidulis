@@ -1,5 +1,5 @@
 import "./button.scss";
-import {CSSProperties, ReactElement} from "react";
+import {ReactElement} from "react";
 
 interface ButtonProps {
     title: string;

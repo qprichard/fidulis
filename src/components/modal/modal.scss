@@ -19,6 +19,8 @@
     width: 25%;
     background-color: $white;
     opacity: 1 !important;
+    font-size: 1.5rem;
+    //overflow-y: auto;
 
     .modal-header {
       font-family: RoundedBookRegular, Roboto, serif;
@@ -29,17 +31,22 @@
       border-bottom-left-radius: 40px;
 
       .subtitle {
-        font-size: 0.8em;
+        font-size: 1.3rem;
       }
     }
 
-    .modal-body {
+    .modal-content {
       font-family: Perpetua serif;
       text-align: left;
+      max-height: 400px;
       padding: 10px 40px;
 
-      li {
-        margin-top: 10px;
+      overflow-y: auto;
+
+      .modal-body {
+        li {
+          margin-top: 10px;
+        }
       }
     }
   }
@@ -54,9 +61,5 @@
 @media screen and (max-device-width: 960px) {
   .modal-background .modal {
     width: 80%;
-    font-size: 1.5*$default;
-
-    .modal-header {
-    }
   }
 }

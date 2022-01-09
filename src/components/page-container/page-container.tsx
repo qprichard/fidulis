@@ -6,13 +6,13 @@ import {MiniMenu} from "../menu/menu";
 interface PageContainerProps {
     imgSrc: string;
     imgHref?: string;
-    imgClassName?: string;
     title: string
     content?: ReactElement;
     buttons?: ReactElement;
+    className?: string;
 }
 
-export const PageContainer = ({content, imgSrc, imgHref, imgClassName, title, buttons}: PageContainerProps) => {
+export const PageContainer = ({content, imgSrc, imgHref, title, buttons, className}: PageContainerProps) => {
     const onImageClick = useCallback(() => {
         if (!imgHref) {
             return;
@@ -21,10 +21,10 @@ export const PageContainer = ({content, imgSrc, imgHref, imgClassName, title, bu
     }, [imgHref]);
 
     return (
-        <div className="page-container fade-in-animation">
+        <div className={`page-container fade-in-animation ${ className ? className : ''}`}>
             <img
                 src={imgSrc}
-                className={`page-img ${imgClassName ? imgClassName : ''}`}
+                className={`page-img`}
                 alt="img"
                 onClick={onImageClick}
             />
@@ -32,8 +32,10 @@ export const PageContainer = ({content, imgSrc, imgHref, imgClassName, title, bu
             <div className={`page-title`}>
                 <div>{title.toUpperCase()}</div>
             </div>
-            <div className={`page-content ${buttons ? '' : 'full'}`}>{content}</div>
-            {buttons ? <div className='page-buttons'>{buttons}</div> : null}
+            <div className={`page-content ${buttons ? '' : 'full'}`}>
+                <div className='page-text'>{content}</div>
+                {buttons ? <div className='page-buttons'>{buttons}</div> : null}
+            </div>
         </div>
     )
 }

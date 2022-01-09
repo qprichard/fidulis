@@ -6,7 +6,7 @@
   position: relative;
   font-weight: bold;
   font-family: RoundedBookRegular, Roboto, serif;
-  font-size: $button;
+  font-size: 1rem;
   color: $orange;
 
   cursor: pointer;
@@ -16,7 +16,8 @@
   min-height: 40px;
   padding-left: 20px;
   padding-bottom: 20px;
-
+  margin-right: 20px;
+  margin-bottom: 20px;
   $radius: 40px;
 
   &::before {
@@ -43,15 +44,11 @@
     width: $radius + 5px;
     height: $radius +5px;
     border-bottom-left-radius: $radius;
-    box-shadow: -5px 5px 5px rgba(0,0,0, 0.3);
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
   }
 
   &:hover {
     color: $white;
-  }
-
-  .button-subtitle {
-    font-size: 0.7*$default;
   }
 }
 
@@ -65,16 +62,8 @@
   flex-wrap: wrap;
 }
 
-@media screen and  (max-width: 1024px) {
-  .button-container {
-    font-size: 0.7*$button;
-  }
-}
 
 @media screen and (max-device-width: 960px) {
-  .button-container {
-    font-size: 1.2*$button;
-  }
   .button-list {
     width: 100%;
   }

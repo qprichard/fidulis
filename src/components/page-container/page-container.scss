@@ -3,20 +3,18 @@
 
 .page-container {
   height: 100%;
-  overflow: hidden;
 
   min-width: 0;
   margin: 0 20% 0 7.5%;
   display: grid;
   grid-template-columns: 25% 10% auto;
-  grid-auto-rows: 10%;
+  grid-auto-rows: 75px;
   grid-column-gap: 20px;
 
   .page-img {
     cursor: pointer;
     grid-column: 1;
     grid-row: 1 / 7;
-
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -26,7 +24,7 @@
   .page-menu {
     //background-color: red;
     grid-column: 1;
-    grid-row: 7 / span 4;
+    grid-row: 7;
   }
 
   .page-title {
@@ -34,12 +32,11 @@
     font-family: RoundedBookRegular, Roboto, serif;
     grid-column: 2;
     grid-row: 1 / span 10;
-
     position: relative;
 
     div {
       color: $white;
-      font-size: $title;
+      font-size: 2.5rem;
       white-space: nowrap;
       position: absolute;
       left: 50%;
@@ -52,7 +49,7 @@
   .page-content {
     //background-color: orange;
     grid-column: 3;
-    grid-row: 1 / 6;
+    grid-row: 1;
 
 
     &.full {
@@ -61,7 +58,7 @@
 
     padding-top: 100px;
     font-family: Perpetua, Roboto, serif;
-    font-size: $default;
+    font-size: 1.2rem;
     text-align: justify;
     color: $white;
 
@@ -70,7 +67,7 @@
 
   .page-subtitle {
     font-family: RoundedBookRegular, Roboto, serif;
-    font-size: $default;
+    font-size: 1rem;
     text-align: justify;
     color: $white;
   }
@@ -93,19 +90,6 @@
 
     .page-menu {
       grid-row: 5 / span 6;
-    }
-
-    .page-title {
-      div {
-        font-size: 0.8*$title;
-      }
-    }
-
-    .page-content {
-      font-size: 0.9*$default;
-    }
-
-    .page-buttons {
     }
   }
 }
@@ -131,10 +115,6 @@
     .page-title {
       grid-column: 1;
       grid-row: 5 / 12;
-
-      div {
-        font-size: 1.5*$title;
-      }
     }
 
     .page-content {
@@ -149,11 +129,9 @@
       }
       margin-right: 50px;
       padding-top: 50px;
-      font-size: 1.5*$default;
     }
 
     .page-subtitle {
-      font-size: 1.5*$default;
     }
 
     .page-buttons {
