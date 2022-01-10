@@ -59,16 +59,13 @@
       color: $dark-blue;
     }
 
-    .icon-button {
+    .contact-button, .news-button {
       cursor: pointer;
       user-select: none;
       display: block;
-      width: 30px;
-      padding-right: 10px;
-
-      &:last-of-type {
-        padding-right: 0;
-      }
+      width: 2rem;
+      height: 2rem;
+      padding-right: 10px
     }
   }
 }
@@ -99,7 +96,7 @@
         display: block;
       }
 
-      .icon-button {
+      .contact-button {
         display: none;
       }
     }
