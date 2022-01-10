@@ -1,6 +1,7 @@
 {
   "short_name": "Fidulis",
-  "name": "Fidulis App",
+  "name": "Fidulis Avocats",
+  "description": "Agence d'avocats basée à Lyon.",
   "icons": [],
   "start_url": ".",
   "display": "standalone",
