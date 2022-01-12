@@ -22,6 +22,7 @@ export const Menu = ({className}: MenuProps) => {
 
 export const MiniMenu = ({className}: MenuProps) => (
     <div className={`menu-container ${className ? className : ''}`}>
+        <MenuRow title='le cabinet' path='/cabinet'/>
         <MenuRow title='conseil' path='/conseil'/>
         <MenuRow title='contentieux' subtitle='Individuels et Collectifs' path='/contentieux'/>
         <MenuRow title='formation' path='/formation'/>
