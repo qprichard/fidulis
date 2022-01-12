@@ -8,7 +8,8 @@ export const AuditContent = () => (
             ou via une data room.
         </p>
         <p>
-            <span className="page-subtitle">AUDIT DE CONFORMITE</span>
+            <span className="page-subtitle underline">AUDIT DE CONFORMITE</span>
+            <br/>
             <br/>
             Fidulis Avocat a développé une expertise particulière pour permettre aux employeurs de s’assurer que leurs
             pratiques en matière de droit du travail et de droit de la sécurité sociale sont conformes à la
@@ -16,7 +17,8 @@ export const AuditContent = () => (
         </p>
 
         <p>
-            <span className="page-subtitle">AUDIT DE D'ACQUISITION</span>
+            <span className="page-subtitle underline">AUDIT DE D'ACQUISITION</span>
+            <br/>
             <br/>
             Fidulis Avocat assiste les entreprises dans leurs opérations de fusion/acquisition pour analyser les
             pratiques sociales d’une entreprise et s’assurer de leur conformité aux règles légales et conventionnelles.

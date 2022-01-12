@@ -5,15 +5,26 @@ div a, p a {
   color: $white;
 }
 
-.access-block {
+.block {
   display: flex;
-  .access-icon {
+  .block-icon {
     width: 2rem;
     height: 2rem;
     margin-right: 5px;
+
+    &.material {
+      background-color: $white;
+      color: $dark-blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom-left-radius: 0.5rem;
+      box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.4);
+    }
+
     img {
       border-bottom-left-radius: 0.5rem;
-      box-shadow: -3px 3px 3px rgba(0,0,0,0.4);
+      box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.4);
     }
   }
   .access-title {

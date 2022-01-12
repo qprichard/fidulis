@@ -35,7 +35,7 @@ export const TopLayout = () => {
             <div className="top-layout">
                 <div className='logo-container'>
                     <img
-                        src={`${process.env.PUBLIC_URL}/img/logo.png`}
+                        src={`${process.env.PUBLIC_URL}/img/logo.svg`}
                         className="logo" alt='Fidulis'
                         onClick={() => navigate('/')}
                     />

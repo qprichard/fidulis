@@ -28,15 +28,12 @@ const ModalContext = createContext<ModalContextProps>({
 
 const Overlay = () => {
     const {modal, setOpen, open} = useContext(ModalContext);
-
-    if (open) {
-        return ReactDOM.createPortal(
-            <div className="modal-background" onClick={() => setOpen(false)}>
-                {modal}
-            </div>,
-            document.querySelector("#modal-root") as Element
-        );
-    } else return null;
+    return ReactDOM.createPortal(
+        <div className={`modal-background ${open ? 'open' : ''}`}onClick={() => setOpen(false)}>
+            {modal}
+        </div>,
+        document.querySelector("#modal-root") as Element
+    );
 }
 
 const ModalProvider = ({children}: any) => {
