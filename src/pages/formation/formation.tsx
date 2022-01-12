@@ -28,7 +28,7 @@ export const FormationContent = () => (
 
 export const FormationPage = () => (
     <PageContainer
-        imgSrc={`${process.env.PUBLIC_URL}/img/meeting.jpg`}
+        imgSrc={`${process.env.PUBLIC_URL}/img/formation.jpeg`}
         title='Formation'
         content={<FormationContent/>}
     />

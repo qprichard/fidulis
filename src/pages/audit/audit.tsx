@@ -31,7 +31,7 @@ export const AuditContent = () => (
 
 export const AuditPage = () => (
     <PageContainer
-        imgSrc={`${process.env.PUBLIC_URL}/img/off.jpg`}
+        imgSrc={`${process.env.PUBLIC_URL}/img/audit.jpeg`}
         title='Audit'
         content={<AuditContent/>}
     />

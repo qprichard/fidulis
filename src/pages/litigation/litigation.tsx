@@ -126,7 +126,7 @@ const LitigationButtons = () => {
 
 export const LitigationPage = () => (
     <PageContainer
-        imgSrc={`${process.env.PUBLIC_URL}/img/building.jpg`}
+        imgSrc={`${process.env.PUBLIC_URL}/img/litigations.jpeg`}
         title='contentieux'
         content={<LitigationContent/>}
         buttons={<LitigationButtons/>}

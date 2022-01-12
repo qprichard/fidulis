@@ -234,7 +234,7 @@ export const ConsultingContent = () => {
 export const ConsultingPage = () => (
     <PageContainer
         title="conseil  "
-        imgSrc={`${process.env.PUBLIC_URL}/img/home.jpg`}
+        imgSrc={`${process.env.PUBLIC_URL}/img/consulting.jpeg`}
         content={<ConsultingContent/>}
         buttons={<ConsultingButtons/>}
     />
