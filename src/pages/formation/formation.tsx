@@ -1,4 +1,5 @@
 import {PageContainer} from "../../components/page-container/page-container";
+import "./formation.scss";
 
 export const FormationContent = () => (
     <>
@@ -29,6 +30,7 @@ export const FormationContent = () => (
 export const FormationPage = () => (
     <PageContainer
         imgSrc={`${process.env.PUBLIC_URL}/img/formation.jpeg`}
+        className="formation-page"
         title='Formation'
         content={<FormationContent/>}
     />

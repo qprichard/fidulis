@@ -1,4 +1,5 @@
 import {PageContainer} from "../../components/page-container/page-container";
+import "./audit.scss";
 
 export const AuditContent = () => (
     <>
@@ -32,6 +33,7 @@ export const AuditContent = () => (
 export const AuditPage = () => (
     <PageContainer
         imgSrc={`${process.env.PUBLIC_URL}/img/audit.jpeg`}
+        className="audit-page"
         title='Audit'
         content={<AuditContent/>}
     />

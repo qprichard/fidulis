@@ -3,6 +3,7 @@ import {PageContainer} from "../../components/page-container/page-container";
 import {Button, ButtonList} from "../../components/button/button";
 import {Modal, ModalContext} from "../../components/modal/modal";
 import {ReactElement, useCallback, useContext} from "react";
+import "./consulting-page.scss";
 
 const Modal1 = () => (
     <Modal>
@@ -233,9 +234,10 @@ export const ConsultingContent = () => {
 
 export const ConsultingPage = () => (
     <PageContainer
-        title="conseil  "
+        title="conseil"
+        className="consulting-page"
         imgSrc={`${process.env.PUBLIC_URL}/img/consulting.jpeg`}
         content={<ConsultingContent/>}
         buttons={<ConsultingButtons/>}
     />
-)
+);

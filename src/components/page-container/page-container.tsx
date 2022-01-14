@@ -21,13 +21,13 @@ export const PageContainer = ({content, imgSrc, imgHref, title, buttons, classNa
     }, [imgHref]);
 
     return (
-        <div itemScope itemType="page"  className={`page-container fade-in-animation ${ className ? className : ''}`}>
-            <img
-                src={imgSrc}
+        <div itemScope itemType="page" className={`page-container fade-in-animation ${className ? className : ''}`}>
+            <div
                 className={`page-img`}
-                alt="img"
                 onClick={onImageClick}
-            />
+            >
+                <img src={imgSrc} alt="img" width="100%" height="100%"/>
+            </div>
             <MiniMenu className="page-menu"/>
             <div className={`page-title`} itemProp="title">
                 <div>{title.toUpperCase()}</div>

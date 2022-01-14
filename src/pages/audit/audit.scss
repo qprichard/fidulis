@@ -1,0 +1,9 @@
+.audit-page {
+  .page-img {
+    img {
+      object-fit: contain;
+      transform: rotate(90deg) scaleX(-1) scale(1.6);
+      object-position: center;
+    }
+  }
+}

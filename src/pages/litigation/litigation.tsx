@@ -2,6 +2,7 @@ import {PageContainer} from "../../components/page-container/page-container";
 import {Button, ButtonList} from "../../components/button/button";
 import {useCallback, useContext} from "react";
 import {Modal, ModalContext} from "../../components/modal/modal";
+import "./litigation.scss";
 
 const Modal1 = () => (
     <Modal>
@@ -128,6 +129,7 @@ export const LitigationPage = () => (
     <PageContainer
         imgSrc={`${process.env.PUBLIC_URL}/img/litigations.jpeg`}
         title='contentieux'
+        className="litigation-page"
         content={<LitigationContent/>}
         buttons={<LitigationButtons/>}
     />
