@@ -19,6 +19,9 @@ const Modal1 = () => (
                 <li>
                     Contrat de chantier, ...
                 </li>
+                <li>
+                    Clauses spécifiques (clauses de non concurrence, clause de confidentialité, forfaits jours sur l'année, ...)
+                </li>
             </ul>
         </Modal.Body>
     </Modal>
@@ -43,6 +46,9 @@ const Modal2 = () => (
                 </li>
                 <li>
                     Licenciement pour motif économique (individuel, collectif)
+                </li>
+                <li>
+                    Retraite
                 </li>
             </ul>
         </Modal.Body>
@@ -85,7 +91,7 @@ const Modal3 = () => (
                     maladie professionnelle
                 </li>
                 <li>
-                    Rédaction de lettre de réserve auprès de la CPAM et de la Comission de Recours Amiable
+                    Rédaction de lettre de réserve auprès de la CPAM et de la Comission Médicale de Recours Amiable (CMRA)
                 </li>
             </ul>
         </Modal.Body>
@@ -134,10 +140,13 @@ const Modal6 = () => (
 
 const Modal7 = () => (
     <Modal>
-        <Modal.Header>INSTALLATION DES REPRÉSENTATNS <br/> DU PERSONNEL ET FONCTIONNEMENT <br/> DES INSTITUTIONS
+        <Modal.Header>INSTALLATION DES REPRÉSENTANTS <br/> DU PERSONNEL ET FONCTIONNEMENT <br/> DES INSTITUTIONS
         </Modal.Header>
         <Modal.Body>
             <ul>
+                <li>
+                    Organisation des élections professionnelles
+                </li>
                 <li>
                     Fonctionnement des instances
                 </li>

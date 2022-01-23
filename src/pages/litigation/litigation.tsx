@@ -70,7 +70,7 @@ const Modal2 = () => (
                     Contentieux en faute inexcusable devant le tribunal judiciaire Pôle social
                 </li>
                 <li>
-                    Recours gracieux, devant la commission de recours amiable (CRA), contentieux, devant le Tribunal
+                    Recours gracieux, devant la Commission Médiacle de Recours Amiable (CMRA), contentieux, devant le Tribunal
                     judiciaire pôle social, contre les décisions de prise en charge au titre de la législation des
                     risques professionnels (maladie professionnelle, accident du travail)
                 </li>
@@ -84,10 +84,11 @@ export const LitigationContent = () => {
             <p>
                 En l’absence de rapprochement amiable entre les parties et quand le litige est inévitable, le cabinet
                 Fidulis Avocat assure la représentation d’une entreprise ou d’une association sur toute le territoire
-                français tant en 1re instance qu’en appel devant les Chambres Sociales devant toutes les juridictions
-                (conseil de prud’hommes : bureau de Conciliation et d’orientation, bureau de Jugement, départition…,
-                tribunal judiciaire Pôle social , tribunal administratif, cour d’appel, CNITAAT….) pour les litiges
-                résultant des relations entre l’employeur et le salarié.
+                français.
+                Le cabinet intervient tant en 1re instance qu’en appel (chambres sociales) devant toutes les
+                juridictions pour les litiges résultant des relations entre l’employeur et le salarié : conseil de
+                prud’hommes (bureau de Conciliation et d’orientation, bureau de Jugement, départition…), tribunal
+                judiciaire Pôle social, tribunal administratif, cour d’appel, CNITAAT….)
             </p>
             <br/>
 
