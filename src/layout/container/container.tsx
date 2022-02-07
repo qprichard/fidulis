@@ -7,10 +7,11 @@ import {FormationPage} from "../../pages/formation/formation";
 import {AuditPage} from "../../pages/audit/audit";
 import {LitigationPage} from "../../pages/litigation/litigation";
 import {ContactPage} from "../../pages/contact/contact";
+import {MentionsPage} from "../../pages/mentions/mentions";
 
 export const ContainerLayout = () => (
     <div className="container-layout">
-        <img src={`${process.env.PUBLIC_URL}/img/background.png`} alt="oups" id="background"/>
+        <img src={`${process.env.PUBLIC_URL}/img/background.png`} alt="" id="background"/>
         <Routes>
             <Route path="/home" element={<Home/>}/>
             <Route path="/cabinet" element={<CabinetPage/>}/>
@@ -19,6 +20,7 @@ export const ContainerLayout = () => (
             <Route path="/audit" element={<AuditPage/>}/>
             <Route path="/contentieux" element={<LitigationPage/>}/>
             <Route path="/contact" element={<ContactPage/>}/>
+            <Route path="/mentions" element={<MentionsPage/>}/>
             <Route path="/" element={<Navigate replace to="/home"/>}/>
         </Routes>
     </div>

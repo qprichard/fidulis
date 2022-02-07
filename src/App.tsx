@@ -4,6 +4,7 @@ import {ContainerLayout} from "./layout/container/container";
 import {HashRouter} from "react-router-dom";
 import {ModalProvider} from "./components/modal/modal";
 import {BurgerMenuProvider} from "./components/burger-menu/burger-menu";
+import {Footer} from "./layout/footer/footer";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                     <BurgerMenuProvider>
                         <TopLayout></TopLayout>
                         <ContainerLayout></ContainerLayout>
+                        <Footer></Footer>
                     </BurgerMenuProvider>
                 </ModalProvider>
             </HashRouter>
