@@ -3,7 +3,7 @@ import {PageContainer} from "../../components/page-container/page-container";
 const CabinetContent = () => (
     <>
         <p>
-            Fidulis Avocat spécialisé en droit du travail et droit de la sécurité sociale accompagne au quotidien les
+            Fidulis avocat intervenant exclusivement en droit du travail et droit de la sécurité sociale accompagne au quotidien les
             employeurs en conseil comme en contentieux et au travers d’actions de formation.
         </p>
         <p>

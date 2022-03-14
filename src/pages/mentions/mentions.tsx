@@ -28,10 +28,26 @@ export const MentionsPage = () => (
         <p>
             <div className="page-subtitle underline">HÉBERGEMENT</div>
 
-            Site hebergé par la société OVH SAS
-            <br/>
+            <p>
+                Site hebergé par la société OVH SAS au capital de 500 000 €
+                <br/>
 
-            OVH SAS – 140, quai du Sartel – 59100 Roubaix
+                RCS Roubaix – Tourcoing 424 761 419 00011
+                <br/>
+                Siège social : 140, Quai du Sartel – 59100 Roubaix
+                <br/>
+                <a href="https://www.ovh.com">www.ovh.com</a>
+                <br/>
+                Service client, composer le : 1007.
+            </p>
+
+            <p>
+                Pour l’exercice de vos droits d’accès de rectification ou de suppression de vos données personnelles faites
+                parvenir un mail à : <a href="mailto:cil@ovh.net">cil@ovh.net</a> ou compléter le <a href="https://www.ovh.com/fr/protection-donnees-personnelles/exercer-vos-droits/" className="form">formulaire OVH disponible en ligne</a> à cet effet.
+                <br/>
+                Pour le signalement d'abus et de contenus illicites, un <a href="https://www.ovh.com/abuse/#!/" className="form">formulaire de contact</a> est également disponible.
+                <br/>
+            </p>
         </p>
         <p>
             <div className="page-subtitle underline">PROPRIÉTÉ INTELLECTUELLE</div>
@@ -66,7 +82,7 @@ export const MentionsPage = () => (
             <br/>
 
 
-            Fidulis Avocat – emartinet@fidulis.fr – 2, place Gailleton – 69002 Lyon – 04 81 92 60 76
+            Fidulis Avocat – emartinet@fidulis.fr – 2, place Gailleton – 69002 Lyon – <a href="tel:+33481926076">04 81 92 60 76</a>
         </p>
     </div>
 )
