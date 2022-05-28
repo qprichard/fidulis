@@ -1,11 +1,13 @@
 import "./top.scss";
 import {useNavigate} from "react-router-dom";
 import MenuIcon from '@mui/icons-material/Menu';
-import {useCallback, useContext, useState} from "react";
+import {useCallback, useContext, useEffect, useState} from "react";
 import {BurgerMenuContext} from "../../components/burger-menu/burger-menu";
 import {Menu, MenuItem} from "@mui/material";
 
 export const TopLayout = () => {
+    
+
     const navigate = useNavigate();
 
     const burgerMnuCtx = useContext(BurgerMenuContext);
@@ -30,6 +32,29 @@ export const TopLayout = () => {
         }
         window.open(`${process.env.PUBLIC_URL}/pdf/${fileName}`);
     }, [setAnchor])
+
+    const [items, setItems] = useState<JSX.Element[]>([]);
+    const fetchData = useCallback(async () => {
+        const data = await fetch(
+            `${process.env.PUBLIC_URL}/pdf/metadata.json`,
+            {
+                headers : { 
+                  'Content-Type': 'application/json',
+                  'Accept': 'application/json'
+                 }
+              }
+            
+            )
+            .then((r) => r.json())
+            .then((d:{name: string, file: string}[]) => d);
+        const newItems = data.map(({name, file}) => <MenuItem onClick={() => handleNewClick(file)}>{name}</MenuItem>);
+        setItems(newItems);
+    }, [setItems, handleNewClick, items])
+
+    useEffect(() => {
+        fetchData();
+    }, [fetchData])
+
     return (
         <>
             <div className="top-layout">
@@ -55,9 +80,7 @@ export const TopLayout = () => {
                         open={open}
                         onClose={handleClose}
                     >
-                        <MenuItem onClick={() => handleNewClick("2021_02_Fidulis_express.pdf")}>Février 2021</MenuItem>
-                        <MenuItem onClick={() => handleNewClick("2021_07_Fidulis_express.pdf")}>Juillet 2021</MenuItem>
-                        <MenuItem onClick={() => handleNewClick("2021_10_Fidulis_express.pdf")}>Octobre 2021</MenuItem>
+                        {items}
                     </Menu>
                 </div>
             </div>
